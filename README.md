@@ -47,7 +47,7 @@ Backend.
 ### Алгоритм запуска сервиса
 
 _Если не использовать Docker_
-1. Клонируйте содержимое данного репозитория к себе: `git clone git@github.com:demetriofr/self_study_project`
+1. Клонируйте содержимое данного репозитория к себе: `git clone git@github.com:demetriofr/self_study_project.git`
 
 2. .env добавите данные из env.sample.
 
@@ -68,7 +68,7 @@ _Если не использовать Docker_
 
 
 _Если использовать Docker_
-1. Клонируйте содержимое данного репозитория к себе: `git clone git@github.com:demetriofr/self_study_project`
+1. Клонируйте содержимое данного репозитория к себе: `git clone git@github.com:demetriofr/self_study_project.git`
 
 2. .env добавите данные из env.sample.
 
