@@ -1,26 +1,28 @@
 from django.db import models
 
-from config.settings import NULLABLE
+from config.settings import NULLABLE, AUTH_USER_MODEL
+from users.models import User
 
 
 class Question(models.Model):
     """Модель для хранения вопросов."""
 
     option = (
-        ('A', 'option_a'),
-        ('B', 'option_b'),
-        ('C', 'option_c'),
-        ('D', 'option_d'),
+        ('option_a', 'вариант A'),
+        ('option_b', 'вариант B'),
+        ('option_c', 'вариант C'),
+        ('option_d', 'вариант D'),
     )
 
-    moderator = models.ForeignKey('users.User', on_delete=models.CASCADE, verbose_name='модератор')
-    title = models.CharField(max_length=120, verbose_name='вопрос')
-    question_text = models.CharField(max_length=400, verbose_name='текст вопроса')
+    moderator = models.ForeignKey(AUTH_USER_MODEL, default=User.objects.first().pk,
+                                  on_delete=models.CASCADE, verbose_name='модератор')
+    question_text = models.CharField(max_length=400, verbose_name='вопрос')
+    description = models.CharField(max_length=120, verbose_name='пояснения к вопросу', **NULLABLE)
     option_a = models.CharField(max_length=250, verbose_name='вариант A')
     option_b = models.CharField(max_length=250, verbose_name='вариант B')
     option_c = models.CharField(max_length=250, verbose_name='вариант C', **NULLABLE)
     option_d = models.CharField(max_length=250, verbose_name='вариант D', **NULLABLE)
-    correct_option = models.CharField(max_length=1, choices=option, verbose_name='правильный вариант')
+    correct_option = models.CharField(max_length=8, choices=option, verbose_name='правильный вариант')
     topic = models.CharField(max_length=120, verbose_name='тема')
     explanation = models.TextField(verbose_name='пояснение', **NULLABLE)
 
@@ -31,10 +33,10 @@ class Question(models.Model):
     class Meta:
         verbose_name = 'вопрос'
         verbose_name_plural = 'вопросы'
-        ordering = ['title']
+        ordering = ['question_text']
 
     def __str__(self):
-        return self.title
+        return self.question_text
 
 
 class Test(models.Model):
@@ -66,8 +68,8 @@ class Testing(models.Model):
     """Модель для хранения тестирования."""
 
     results = (
-        (0, 'failed'),
-        (1, 'passed'),
+        (0, 'не сдал'),
+        (1, 'сдал'),
     )
 
     student = models.ForeignKey('users.User', on_delete=models.CASCADE, verbose_name='обучающийся')

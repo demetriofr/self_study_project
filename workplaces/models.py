@@ -5,13 +5,13 @@ class SOUTCard(models.Model):
     """Модель для хранения реквизитов данных карты специальной оценки условий труда (СОУТ)."""
 
     labor_conditions_class = [
-        (10, 'optimal'),
-        (20, 'permissible'),
-        (31, 'harmful labor conditions of the 1'),
-        (32, 'harmful labor conditions of the 2'),
-        (33, 'harmful labor conditions of the 3'),
-        (34, 'harmful labor conditions of the 4'),
-        (40, 'hazardous labor conditions')
+        (10, 'оптимальные'),
+        (20, 'допустимые'),
+        (31, 'вредные условия труда 1 степени'),
+        (32, 'вредные условия труда 2 степени'),
+        (33, 'вредные условия труда 3 степени'),
+        (34, 'вредные условия труда 4 степени'),
+        (40, 'опасные условия труда')
     ]
 
     admin = models.ForeignKey('users.User', on_delete=models.CASCADE, verbose_name='администратор')

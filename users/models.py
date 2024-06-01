@@ -55,9 +55,9 @@ class UserGroup(models.Model):
     """Модель для хранения групп пользователей."""
 
     status = (
-        ('A', 'administrator'),
-        ('M', 'moderator'),
-        ('S', 'student')
+        ('A', 'администратор'),
+        ('M', 'модератор'),
+        ('S', 'обучающийся')
     )
 
     group_name = models.CharField(max_length=120, verbose_name='название группы')

@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Organization, Department, Position, Worker
+
+# Register models.
+admin.site.register(Organization)
+admin.site.register(Department)
+admin.site.register(Position)
+admin.site.register(Worker)

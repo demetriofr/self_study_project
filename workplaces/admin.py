@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+from workplaces.models import SOUTCard
+
+# Register models.
+admin.site.register(SOUTCard)
