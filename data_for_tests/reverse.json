@@ -9,6 +9,10 @@
     "WP": {
       "name": "workplaces",
       "SOUTCard": "sout_card"
+    },
+    "ID": {
+      "name": "individuals",
+      "SOUTCard": "individual"
     }
   }
 }
