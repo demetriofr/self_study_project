@@ -161,15 +161,15 @@ CSRF_TRUSTED_ORIGINS = [getenv('CSRF_ALLOWED_ORIGINS')]
 CORS_ALLOWED_CREDENTIALS = getenv('CORS_ALLOWED_CREDENTIALS')
 
 # Rest Framework settings
-# REST_FRAMEWORK = {
-#     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-#     # 'PAGE_SIZE': 5
-#     'DEFAULT_AUTHENTICATION_CLASSES': (
-#         'rest_framework_simplejwt.authentication.JWTAuthentication',
-#     ),
-#
-#     'ACCESS_TOKEN_LIFETIME': timedelta(days=int(getenv('ACCESS_TOKEN_LIFETIME'))),  # Increase token lifetime
-#     'DEFAULT_PERMISSION_CLASSES': [
-#         'rest_framework.permissions.IsAuthenticated',
-#     ]
-# }
+REST_FRAMEWORK = {
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    # 'PAGE_SIZE': 5
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ),
+
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=int(getenv('ACCESS_TOKEN_LIFETIME'))),  # Increase token lifetime
+    'DEFAULT_PERMISSION_CLASSES': [
+        'rest_framework.permissions.IsAuthenticated',
+    ]
+}

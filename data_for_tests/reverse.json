@@ -1,0 +1,14 @@
+{"CRUD": {
+  "POST": "create",
+  "GET": "get",
+  "LIST": "list",
+  "PUT": "update",
+  "DELETE": "delete"
+},
+  "APP": {
+    "WP": {
+      "name": "workplaces",
+      "SOUTCard": "sout_card"
+    }
+  }
+}

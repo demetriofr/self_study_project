@@ -1,3 +1,12 @@
 from django.shortcuts import render
+from rest_framework.generics import (
+    CreateAPIView,
+    RetrieveAPIView,
+    ListAPIView,
+    UpdateAPIView,
+    DestroyAPIView
+)
 
-# Create your views here.
+
+class UserWithStatusModeratorCreateAPIView(CreateAPIView):
+    pass

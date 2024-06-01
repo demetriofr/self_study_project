@@ -1,0 +1,22 @@
+{
+  "data_test_workplaces_SOUTCard_1": {
+    "sout_card_number": "001A-24",
+    "date_of_card_creation": "2024-06-01",
+    "ut_class": 20
+  },
+  "data_test_workplaces_SOUTCard_2": {
+    "sout_card_number": "002-24",
+    "date_of_card_creation": "2024-06-01",
+    "ut_class": 31
+  },
+  "data_test_workplaces_SOUTCard_3": {
+    "sout_card_number": "003-24",
+    "date_of_card_creation": "2024-06-01",
+    "ut_class": 20
+  },
+  "data_test_workplaces_SOUTCard_SOUTCardCreationDateValidator_1": {
+    "sout_card_number": "001-24",
+    "date_of_card_creation": "2050-06-01",
+    "ut_class": 20
+  }
+}

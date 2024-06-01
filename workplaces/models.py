@@ -16,7 +16,7 @@ class SOUTCard(models.Model):
 
     admin = models.ForeignKey('users.User', on_delete=models.CASCADE, verbose_name='администратор')
     sout_card_number = models.CharField(max_length=120, verbose_name='номер карты СОУТ')
-    date_of_card_creation = models.DateTimeField(verbose_name='дата создания карты СОУТ')
+    date_of_card_creation = models.DateField(verbose_name='дата создания карты СОУТ')
     ut_class = models.CharField(max_length=2, choices=labor_conditions_class, verbose_name='класс УТ')
 
     # Дата создания и обновления
@@ -26,6 +26,7 @@ class SOUTCard(models.Model):
     class Meta:
         verbose_name = 'Карта СОУТ'
         verbose_name_plural = 'Карты СОУТ'
+        ordering = ['sout_card_number']
 
     def __str__(self):
         return self.sout_card_number

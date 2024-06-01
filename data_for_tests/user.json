@@ -1,0 +1,38 @@
+{
+  "data_test_user_admin_1": {
+    "username": "testov_1",
+    "password": "123qwe456rty",
+    "status_admin": true,
+    "status_moderator": false,
+    "status_student": false
+  },
+  "data_test_user_admin_2": {
+    "username": "testov_2",
+    "password": "123qwe456rty",
+    "status_admin": true,
+    "status_moderator": false,
+    "status_student": false
+  },
+  "data_test_user_moderator_1": {
+    "username": "testov_3",
+    "password": "123qwe456rty",
+    "status_admin": false,
+    "status_moderator": true,
+    "status_student": false
+  },
+  "data_test_user_moderator_2": {
+    "username": "testov_4",
+    "password": "123qwe456rty",
+    "status_admin": false,
+    "status_moderator": true,
+    "status_student": false
+  },
+  "data_test_user_student_1": {
+    "username": "testov_3",
+    "password": "123qwe456rty"
+  },
+  "data_test_user_student_2": {
+    "username": "testov_6",
+    "password": "123qwe456rty"
+  }
+}

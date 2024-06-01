@@ -11,4 +11,6 @@ class SOUTCardSerializer(serializers.ModelSerializer):
         model = SOUTCard
         fields = '__all__'
         extra_kwargs = {'admin': {'read_only': True}}  # Запрет редактирования администратор
-        validators = [SOUTCardCreationDateValidator()]
+        validators = [
+            SOUTCardCreationDateValidator()
+        ]
