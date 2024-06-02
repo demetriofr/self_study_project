@@ -1,0 +1,37 @@
+{
+  "data_test_individuals_Individual_1": {
+    "last_name": "Тестов",
+    "first_name": "Тест",
+    "middle_name": "Тестович",
+    "data_of_birth": "2006-06-01",
+    "is_public_of_moderators": false
+  },
+  "data_test_individuals_Individual_2": {
+    "last_name": "Тестин",
+    "first_name": "Тест",
+    "middle_name": "Тестович",
+    "data_of_birth": "2005-06-01",
+    "is_public_of_moderators": false
+  },
+  "data_test_individuals_Individual_3": {
+    "last_name": "Тестиков",
+    "first_name": "Тестик",
+    "middle_name": "Тестикович",
+    "data_of_birth": "2004-06-01",
+    "is_public_of_moderators": false
+  },
+    "data_test_individuals_Individual_is_public_of_moderators_4": {
+    "last_name": "Тестов",
+    "first_name": "Тестик",
+    "middle_name": "Тестикович",
+    "data_of_birth": "2003-06-01",
+    "is_public_of_moderators": true
+  },
+    "data_test_individuals_Individual_IndividualDataOfBirthValidator_5": {
+    "last_name": "Тестин",
+    "first_name": "Тестик",
+    "middle_name": "Тестикович",
+    "data_of_birth": "2024-06-01",
+    "is_public_of_moderators": true
+  }
+}

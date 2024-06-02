@@ -19,6 +19,9 @@ class Individual(models.Model):
 
     avatar = models.ImageField(upload_to='individuals/', verbose_name='аватар', **NULLABLE)
 
+    # Может быть редактирован другими модераторами
+    is_public_of_moderators = models.BooleanField(default=False, verbose_name='публичный ли для модераторов')
+
     # Даты создания и обновления данных физлица
     data_create = models.DateTimeField(auto_now_add=True, verbose_name='дата создания')
     data_update = models.DateTimeField(auto_now=True, verbose_name='дата обновления')

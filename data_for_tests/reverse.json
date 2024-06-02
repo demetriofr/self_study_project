@@ -12,7 +12,36 @@
     },
     "ID": {
       "name": "individuals",
-      "SOUTCard": "individual"
+      "Individual": "individual"
     }
+  },
+  "US":{
+    "name": "users",
+    "User": "user",
+    "UserGroup": "user_group"
+  },
+  "PL":{
+    "name": "planning",
+    "TrainingMatrix": "training_matrix"
+  },
+  "CO":{
+    "name": "company",
+    "Organisation": "organisation",
+    "Department": "department",
+    "Position": "position",
+    "Worker": "worker"
+  },
+  "KT": {
+    "name": "knowledge_testing",
+    "Question": "question",
+    "Test": "test",
+    "TestResult": "test_result"
+  },
+  "MA": {
+    "name": "Topic",
+    "AdditionalMaterial": "additional_material",
+    "Topic": "topic",
+    "Module": "module",
+    "Program": "program"
   }
 }
