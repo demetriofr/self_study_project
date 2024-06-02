@@ -34,7 +34,7 @@ class Topic(models.Model):
 
     # Материал, необходимый для подготовки по данной теме
     material = models.TextField(verbose_name='материал')
-    additional_materials = models.ManyToManyField('materials.AdditionMaterial', verbose_name='доп. материалы',
+    addition_materials = models.ManyToManyField('materials.AdditionMaterial', verbose_name='доп. материалы',
                                                   blank=True)
 
     execution_time = models.PositiveIntegerField(verbose_name='время на выполнение')

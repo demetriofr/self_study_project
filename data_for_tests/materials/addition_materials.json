@@ -1,0 +1,22 @@
+{
+  "data_test_materials_AdditionMaterial_1": {
+    "title": "Трудовой кодекс России",
+    "type": "Трудовое законодательство",
+    "link": "https://www.consultant.ru/document/cons_doc_LAW_34683/"
+  },
+  "data_test_materials_AdditionMaterial_2": {
+    "title": "Правила обучения по охране труда и проверки знаний требований охраны труда",
+    "type": "Охрана труда",
+    "link": "https://www.consultant.ru/document/cons_doc_LAW_405174/"
+  },
+  "data_test_materials_AdditionMaterial_3": {
+    "title": "Правил по охране труда при работе на высоте",
+    "type": "Охрана труда",
+    "link": "https://www.consultant.ru/document/cons_doc_LAW_371453/"
+  },
+  "data_test_materials_AdditionMaterial_AdditionMaterialCorrectURLValidator_4": {
+    "title": "Правил противопожарного режима в Российской Федерации",
+    "type": "Пожарная безопасность",
+    "link": "www.consultant.ru/document/cons_doc_LAW_363263/"
+  }
+}

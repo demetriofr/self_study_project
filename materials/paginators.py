@@ -1,7 +1,7 @@
 from rest_framework.pagination import PageNumberPagination
 
 
-class AdditionalMaterialListPagination(PageNumberPagination):
+class AdditionMaterialListPagination(PageNumberPagination):
     """Пользовательский класс нумерации страниц для списков модели AdditionalMaterial."""
 
     page_size = 5

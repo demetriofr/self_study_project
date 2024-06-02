@@ -29,10 +29,16 @@
   },
   "data_test_user_student_1": {
     "username": "testov_3",
-    "password": "123qwe456rty"
+    "password": "123qwe456rty",
+    "status_admin": false,
+    "status_moderator": false,
+    "status_student": true
   },
   "data_test_user_student_2": {
     "username": "testov_6",
-    "password": "123qwe456rty"
+    "password": "123qwe456rty",
+    "status_admin": false,
+    "status_moderator": false,
+    "status_student": true
   }
 }

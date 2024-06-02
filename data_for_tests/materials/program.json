@@ -1,0 +1,15 @@
+{
+    "data_test_materials_Program_1": {
+      "title": "Общие вопросы охраны труда"
+  },
+    "data_test_materials_Program_2": {
+      "title": "СИЗ 2"
+  },
+    "data_test_materials_Program_3": {
+      "title": "СИЗ 3"
+  },
+    "data_test_materials_Program_ProgramCreationAboveTenValidator_4": {
+      "title": "Общие вопросы охраны труда",
+      "list_topics": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+  }
+}
