@@ -1,0 +1,1042 @@
+{
+	"info": {
+		"_postman_id": "09c8d124-49fe-453d-a4c5-a67f2aaa5dd9",
+		"name": "self-study_project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33275364"
+	},
+	"item": [
+		{
+			"name": "workplaces",
+			"item": [
+				{
+					"name": "SOUTCard",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"sout_card_number\": \"001-24\",\n    \"date_of_card_creation\": \"2024-06-01\",\n    \"ut_class\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/workplaces/sout_card/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create SOUTCardCreationDateValidator",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"sout_card_number\": \"001-24\",\n    \"date_of_card_creation\": \"2050-06-01\",\n    \"ut_class\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/workplaces/sout_card/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "get Copy",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/workplaces/sout_card/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "list Copy",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/workplaces/sout_card/list/"
+							},
+							"response": []
+						},
+						{
+							"name": "update Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"sout_card_number\": \"001A-24\",\n    \"date_of_card_creation\": \"2024-06-01\",\n    \"ut_class\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/workplaces/sout_card/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "update SOUTCardCreationDateValidator Copy",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"sout_card_number\": \"001A-24\",\n    \"date_of_card_creation\": \"2050-06-01\",\n    \"ut_class\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/workplaces/sout_card/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "delete Copy",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"sout_card_number\": \"001A-24\",\n    \"date_of_card_creation\": \"2024-06-01\",\n    \"ut_class\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/workplaces/sout_card/delete/3/"
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "individuals",
+			"item": [
+				{
+					"name": "Individual",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"last_name\": \"Тестов\",\n    \"first_name\": \"Тест\",\n    \"middle_name\": \"Тестович\",\n    \"data_of_birth\": \"2006-06-01\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/individuals/individual/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create IndividualDataOfBirthValidator",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"last_name\": \"Тестов\",\n    \"first_name\": \"Тест\",\n    \"middle_name\": \"Тестович\",\n    \"data_of_birth\": \"2008-06-02\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/individuals/individual/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/individuals/individual/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/individuals/individual/list/"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"last_name\": \"Тестов\",\n    \"first_name\": \"Тестик\",\n    \"middle_name\": \"Тестович\",\n    \"data_of_birth\": \"2006-06-01\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/individuals/individual/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "update SOUTCardCreationDateValidator",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"last_name\": \"Тестов\",\n    \"first_name\": \"Тест\",\n    \"middle_name\": \"Тестович\",\n    \"data_of_birth\": \"2008-06-02\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/individuals/individual/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"sout_card_number\": \"001A-24\",\n    \"date_of_card_creation\": \"2024-06-01\",\n    \"ut_class\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/individuals/individual/delete/3/"
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "materials",
+			"item": [
+				{
+					"name": "AdditionMaterial",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Трудовой кодекс России\",\n    \"type\": \"Трудовое законодательство\",\n    \"link\": \"https://www.consultant.ru/document/cons_doc_LAW_34683/\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/addition_material/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create AdditionMaterialCorrectURLValidator",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Трудовой кодекс России\",\n    \"type\": \"Трудовое законодательство\",\n    \"link\": \"https://ww.consultant.ru/document/cons_doc_LAW_34683/\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/addition_material/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/materials/addition_material/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/addition_material/list/"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Трудовой кодекс Российской Федерации\",\n    \"type\": \"Трудовое законодательство\",\n    \"link\": \"https://www.consultant.ru/document/cons_doc_LAW_34683/\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/addition_material/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "update AdditionMaterialCorrectURLValidator",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Трудовой кодекс России\",\n    \"type\": \"Трудовое законодательство\",\n    \"link\": \"www.consultant.ru/document/cons_doc_LAW_34683/\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/addition_material/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"sout_card_number\": \"001A-24\",\n    \"date_of_card_creation\": \"2024-06-01\",\n    \"ut_class\": 20\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/addition_material/delete/3/"
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Topic",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 2\",\n    \"material\": \"Средства индивидуальной защиты (СИЗ) являются неотъемлемой частью системы охраны труда. Они предназначены для предотвращения или уменьшения воздействия вредных и опасных производственных факторов на работников. К СИЗ относятся различные виды спецодежды, защитные очки, маски, перчатки, каски, наушники и другие приспособления. Выбор СИЗ зависит от специфики работы и типа потенциального риска. При этом важно учитывать не только технические характеристики СИЗ, но и их удобство использования. Качественные СИЗ должны быть легкими, прочными, хорошо вентилируемыми и не стеснять движений работника. Также необходимо следить за своевременной заменой СИЗ, так как со временем они теряют свои защитные свойства. Использование СИЗ является обязательным условием безопасной работы на производстве или в условиях повышенного риска.\",\n    \"execution_time\": 30\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create 2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Общие вопросы охраны труда\",\n    \"material\": \"Охрана труда – это комплекс мер, направленных на обеспечение безопасности работников на рабочем месте. Эти меры включают в себя обучение персонала правилам безопасности, контроль за соблюдением этих правил, а также проведение регулярных проверок состояния оборудования и инструментов. Общие вопросы охраны труда могут быть связаны с различными аспектами работы предприятия или организации. Например, одним из наиболее распространенных вопросов является правильный выбор средств индивидуальной защиты (СИЗ). Для каждого вида работ существуют определенные требования к СИЗ, которые должны соответствовать стандартам качества и безопасности. Еще одним важным вопросом является организация рабочего места. Рабочее место должно быть оборудовано таким образом, чтобы минимизировать риск получения травм или заболеваний. Кроме того, необходимо проводить регулярную проверку технического состояния оборудования и инструментов, чтобы избежать возможных аварийных ситуаций. Важно также учитывать психологические факторы при работе на производстве или в офисе. Стресс может негативно сказаться на здоровье человека, поэтому работодатель должен создавать условия для комфортной работы своих сотрудников.\",\n    \"execution_time\": 5\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create TopicExecutionTimeBetweenFiveAndSixtyMinutesValidator - 61",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Общие вопросы охраны труда\",\n    \"material\": \"Охрана труда – это комплекс мер, направленных на обеспечение безопасности работников на рабочем месте. Эти меры включают в себя обучение персонала правилам безопасности, контроль за соблюдением этих правил, а также проведение регулярных проверок состояния оборудования и инструментов. Общие вопросы охраны труда могут быть связаны с различными аспектами работы предприятия или организации. Например, одним из наиболее распространенных вопросов является правильный выбор средств индивидуальной защиты (СИЗ). Для каждого вида работ существуют определенные требования к СИЗ, которые должны соответствовать стандартам качества и безопасности. Еще одним важным вопросом является организация рабочего места. Рабочее место должно быть оборудовано таким образом, чтобы минимизировать риск получения травм или заболеваний. Кроме того, необходимо проводить регулярную проверку технического состояния оборудования и инструментов, чтобы избежать возможных аварийных ситуаций. Важно также учитывать психологические факторы при работе на производстве или в офисе. Стресс может негативно сказаться на здоровье человека, поэтому работодатель должен создавать условия для комфортной работы своих сотрудников.\",\n    \"execution_time\": 61\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create TopicExecutionTimeBetweenFiveAndSixtyMinutesValidator - 4",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Общие вопросы охраны труда\",\n    \"material\": \"Охрана труда – это комплекс мер, направленных на обеспечение безопасности работников на рабочем месте. Эти меры включают в себя обучение персонала правилам безопасности, контроль за соблюдением этих правил, а также проведение регулярных проверок состояния оборудования и инструментов. Общие вопросы охраны труда могут быть связаны с различными аспектами работы предприятия или организации. Например, одним из наиболее распространенных вопросов является правильный выбор средств индивидуальной защиты (СИЗ). Для каждого вида работ существуют определенные требования к СИЗ, которые должны соответствовать стандартам качества и безопасности. Еще одним важным вопросом является организация рабочего места. Рабочее место должно быть оборудовано таким образом, чтобы минимизировать риск получения травм или заболеваний. Кроме того, необходимо проводить регулярную проверку технического состояния оборудования и инструментов, чтобы избежать возможных аварийных ситуаций. Важно также учитывать психологические факторы при работе на производстве или в офисе. Стресс может негативно сказаться на здоровье человека, поэтому работодатель должен создавать условия для комфортной работы своих сотрудников.\",\n    \"execution_time\": 4\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create TopicCreationAboveTenValidator",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Общие вопросы охраны труда\",\n    \"material\": \"Охрана труда – это комплекс мер, направленных на обеспечение безопасности работников на рабочем месте. Эти меры включают в себя обучение персонала правилам безопасности, контроль за соблюдением этих правил, а также проведение регулярных проверок состояния оборудования и инструментов. Общие вопросы охраны труда могут быть связаны с различными аспектами работы предприятия или организации. Например, одним из наиболее распространенных вопросов является правильный выбор средств индивидуальной защиты (СИЗ). Для каждого вида работ существуют определенные требования к СИЗ, которые должны соответствовать стандартам качества и безопасности. Еще одним важным вопросом является организация рабочего места. Рабочее место должно быть оборудовано таким образом, чтобы минимизировать риск получения травм или заболеваний. Кроме того, необходимо проводить регулярную проверку технического состояния оборудования и инструментов, чтобы избежать возможных аварийных ситуаций. Важно также учитывать психологические факторы при работе на производстве или в офисе. Стресс может негативно сказаться на здоровье человека, поэтому работодатель должен создавать условия для комфортной работы своих сотрудников.\",\n    \"execution_time\": 5,\n    \"addition_materials\": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/materials/topic/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/list/"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 2\",\n    \"material\": \"Средства индивидуальной защиты (СИЗ) являются неотъемлемой частью системы охраны труда. Они предназначены для предотвращения или уменьшения воздействия вредных и опасных производственных факторов на работников. К СИЗ относятся различные виды спецодежды, защитные очки, маски, перчатки, каски, наушники и другие приспособления. Выбор СИЗ зависит от специфики работы и типа потенциального риска. При этом важно учитывать не только технические характеристики СИЗ, но и их удобство использования. Качественные СИЗ должны быть легкими, прочными, хорошо вентилируемыми и не стеснять движений работника. Также необходимо следить за своевременной заменой СИЗ, так как со временем они теряют свои защитные свойства. Использование СИЗ является обязательным условием безопасной работы на производстве или в условиях повышенного риска.\",\n    \"execution_time\": 31\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "update TopicExecutionTimeBetweenFiveAndSixtyMinutesValidator - 61",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 2\",\n    \"material\": \"Средства индивидуальной защиты (СИЗ) являются неотъемлемой частью системы охраны труда. Они предназначены для предотвращения или уменьшения воздействия вредных и опасных производственных факторов на работников. К СИЗ относятся различные виды спецодежды, защитные очки, маски, перчатки, каски, наушники и другие приспособления. Выбор СИЗ зависит от специфики работы и типа потенциального риска. При этом важно учитывать не только технические характеристики СИЗ, но и их удобство использования. Качественные СИЗ должны быть легкими, прочными, хорошо вентилируемыми и не стеснять движений работника. Также необходимо следить за своевременной заменой СИЗ, так как со временем они теряют свои защитные свойства. Использование СИЗ является обязательным условием безопасной работы на производстве или в условиях повышенного риска.\",\n    \"execution_time\": 61\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/topic/delete/3/"
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Module",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/module/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create ProgramCreationAboveTenValidator",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Общие вопросы охраны труда\",\n    \"list_topics\": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/module/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/materials/module/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/module/list/"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/module/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "update ProgramCreationAboveTenValidator",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Общие вопросы охраны труда\",\n    \"list_topics\": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/module/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/module/delete/3/"
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				},
+				{
+					"name": "Program",
+					"item": [
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 1\",\n    \"is_public\": true\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/program/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "create ProgramCreationAboveTenValidator",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"Общие вопросы охраны труда\",\n    \"list_modules\": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/program/create/"
+							},
+							"response": []
+						},
+						{
+							"name": "get",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8000/materials/program/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "get all",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/program/all/4/"
+							},
+							"response": []
+						},
+						{
+							"name": "list",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/program/list/"
+							},
+							"response": []
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 1\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/program/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "update ProgramCreationAboveTenValidator",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"СИЗ 2\",\n    \"material\": \"Средства индивидуальной защиты (СИЗ) являются неотъемлемой частью системы охраны труда. Они предназначены для предотвращения или уменьшения воздействия вредных и опасных производственных факторов на работников. К СИЗ относятся различные виды спецодежды, защитные очки, маски, перчатки, каски, наушники и другие приспособления. Выбор СИЗ зависит от специфики работы и типа потенциального риска. При этом важно учитывать не только технические характеристики СИЗ, но и их удобство использования. Качественные СИЗ должны быть легкими, прочными, хорошо вентилируемыми и не стеснять движений работника. Также необходимо следить за своевременной заменой СИЗ, так как со временем они теряют свои защитные свойства. Использование СИЗ является обязательным условием безопасной работы на производстве или в условиях повышенного риска.\",\n    \"execution_time\": 61\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/program/update/1/"
+							},
+							"response": []
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/materials/program/delete/3/"
+							},
+							"response": []
+						}
+					],
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"type": "text/javascript",
+								"packages": {},
+								"exec": [
+									""
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "User",
+					"item": []
+				},
+				{
+					"name": "token",
+					"item": [
+						{
+							"name": "token-csu",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"username\": \"FrolovDA\",\n    \"password\": \"NEWworld42\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8000/users/token/"
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": {
+			"token": "{{token_admin_moderate}}"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

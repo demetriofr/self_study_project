@@ -1,0 +1,49 @@
+{
+  "CRUD": {
+    "POST": "create",
+    "GET": "get",
+    "LIST": "list",
+    "LIST_ALL": "list_all",
+    "PUT": "update",
+    "DELETE": "delete"
+  },
+  "APP": {
+    "WP": {
+      "name": "workplaces",
+      "SOUTCard": "sout_card"
+    },
+    "ID": {
+      "name": "individuals",
+      "Individual": "individual"
+    },
+    "US": {
+      "name": "users",
+      "User": "user",
+      "UserGroup": "user_group"
+    },
+    "PL": {
+      "name": "planning",
+      "TrainingMatrix": "training_matrix"
+    },
+    "CO": {
+      "name": "company",
+      "Organisation": "organisation",
+      "Department": "department",
+      "Position": "position",
+      "Worker": "worker"
+    },
+    "KT": {
+      "name": "knowledge_testing",
+      "Question": "question",
+      "Test": "test",
+      "TestResult": "test_result"
+    },
+    "MA": {
+      "name": "materials",
+      "AdditionMaterial": "addition_material",
+      "Topic": "topic",
+      "Module": "module",
+      "Program": "program"
+    }
+  }
+}

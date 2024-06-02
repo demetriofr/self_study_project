@@ -1,0 +1,20 @@
+.wide-title {
+    width: 70%;
+    height: 3em; /* Примерно две строки при использовании line-height 1.4em */
+    line-height: 1.4em;
+    overflow: hidden;
+}
+
+.wide-text {
+    width: 70%;
+    height: 3em;
+    line-height: 1.4em;
+    overflow: hidden;
+}
+
+.wide-textarea {
+    width: 70%;
+    height: 5em;
+    line-height: 1.4em;
+    overflow: hidden;
+}
